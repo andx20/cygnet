@@ -1,0 +1,648 @@
+/* Copyright (C) YOOtheme GmbH, http://www.gnu.org/licenses/gpl.html GNU/GPL */
+@import "uikit/uikit.less";
+// Section Variables customizer.json
+// ========================================================================
+
+@sectionlogobar-background:			#fff;
+@sectionlogobar-color:					#222;
+
+@sectiontop-background:					#fff;
+@sectiontop-color:						#222;
+@sectiontop-link-color:					#222;		
+
+@sectionheaderbar-background:				#fff;
+@sectionheaderbar-color:					#222;
+@sectionheaderbar-link-color:				#222;		
+
+@sectiontop_a-background:				#fff;
+@sectiontop_a-color:					#222;
+@sectiontop_a-link-color:				#222;		
+
+@sectiontop_b-background:				#fff;
+@sectiontop_b-color:					#222;
+@sectiontop_b-link-color:				#222;		
+
+@sectiontop_c-background:				#fff;
+@sectiontop_c-color:					#222;
+@sectiontop_c-link-color:				#222;		
+
+@sectiontop_d-background:				#fff;
+@sectiontop_d-color:					#222;
+@sectiontop_d-link-color:				#222;		
+
+@sectionbottom_a-background:			#fff;
+@sectionbottom_a-color:					#222;
+@sectionbottom_a-link-color:			#222;		
+
+@sectionbottom_b-background:			#fff;
+@sectionbottom_b-color:					#222;
+@sectionbottom_b-link-color:			#222;		
+
+@sectionbottom_c-background:			#fff;
+@sectionbottom_c-color:					#222;
+@sectionbottom_c-link-color:			#222;		
+
+@sectionbottom_d-background:			#fff;
+@sectionbottom_d-color:					#222;
+@sectionbottom_d-link-color:			#222;		
+
+@sectionfooter-background:			#fff;
+@sectionfooter-color:					#222;
+@sectionfooter-link-color:			#222;		
+
+/* Panel Box Override
+ ========================================================================== */
+.uk-panel-box .uk-panel-title { color: @panel-box-title-color!important; }
+.uk-panel-box-primary .uk-panel-title { color: @panel-box-primary-title-color!important; }
+.uk-panel-box-secondary .uk-panel-title { color: @panel-box-secondary-title-color!important; }
+
+.headline-border .uk-panel-title::after {
+    background-color: @panel-box-title-color;
+	border:none;
+}
+.headline-border .uk-panel-title {
+	font-size:250%;
+    line-height:300%;
+	margin-bottom:30px;
+	padding-bottom:10px;
+}
+.headline-border .uk-panel-title::after {
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 30%;
+}
+/* Buttons
+ ========================================================================== */
+.uk-button {
+	color: @button-color !important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	padding:6px 14px!important;
+	transition: all 0.2s ease-in 0.2s; /* explorer 10 */
+    -webkit-transition: all 2s ease-in 2s; /* chrome & safari */
+    -moz-transition: all ease-in-out 0.4s; /* firefox */
+    -o-transition: all 2s ease-in 2s; /* opera */
+}
+.uk-button-primary  {
+	padding:6px 14px!important;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	transition: all 0.2s ease-in 0.2s; /* explorer 10 */
+    -webkit-transition: all 2s ease-in 2s; /* chrome & safari */
+    -moz-transition: all ease-in-out 0.4s; /* firefox */
+    -o-transition: all 2s ease-in 2s; /* opera */}
+
+
+/* Toolbar
+ ========================================================================== */
+
+.toolbar-outer  {
+	background:@sectiontop-background;
+}
+
+.uk-icon:hover,
+.toolbar-outer a,
+.toolbar-outer a:hover {
+	color:@sectiontop-color;
+}
+.toolbar-outer h1 + h2 + h3 + h4 + h5 + h6 {
+	color:@sectiontop-color;
+}
+/* Headerbar
+ ========================================================================== */
+.headerbar  {
+	background:@sectionheaderbar-background;
+}
+
+.headerbar a {
+	color:@sectionheaderbar-link-color;
+}
+.headerbar a:hover {
+	color:@global-link-hover-color;
+}
+.headerbar, .headerbar h1, .headerbar h2, .headerbar h3, .headerbar h4, .headerbar h5, .headerbar h6 {
+	color:@sectionheaderbar-color;
+}
+
+/* Section Top A 
+ ========================================================================== */
+#top-a {
+	background-color:@sectiontop_a-background;
+}
+#top-a a {
+	color:@sectiontop_a-link-color;
+}
+#top-a, #top-a h1, #top-a h2, #top-a h3, #top-a h4, #top-a h5, #top-a h6 {
+	color:@sectiontop_a-color;
+}
+
+/* Section Top B 
+ ========================================================================== */
+#top-b {
+	background-color:@sectiontop_b-background;
+}
+#top-b a {
+	color:@sectiontop_b-link-color;
+}
+#top-b, #top-b h1, #top-b h2, #top-b h3, #top-b h4, #top-b h5, #top-b h6 {
+	color:@sectiontop_b-color;
+}
+/* Section Top C 
+ ========================================================================== */
+#top-c {
+	background-color:@sectiontop_c-background;
+}
+#top-c a {
+	color:@sectiontop_c-link-color;
+}
+#top-c, #top-c h1, #top-c h2, #top-c h3, #top-c h4, #top-c h5, #top-c h6 {
+	color:@sectiontop_c-color;
+}
+
+/* Section Top D 
+ ========================================================================== */
+#top-d {
+	background-color:@sectiontop_d-background;
+}
+#top-d a {
+	color:@sectiontop_d-link-color;
+}
+#top-d, #top-d h1, #top-d h2, #top-d h3, #top-d h4, #top-d h5, #top-d h6 {
+	color:@sectiontop_d-color;
+}
+
+/* Section Bottom A 
+ ========================================================================== */
+#bottom-a {
+	background-color:@sectionbottom_a-background;
+}
+#bottom-a a {
+	color:@sectionbottom_a-link-color;
+}
+#bottom-a, #bottom-a h1, #bottom-a h2, #bottom-a h3, #bottom-a h4, #bottom-a h5, #bottom-a h6 {
+	color:@sectionbottom_a-color;
+}
+/* Section Bottom B 
+ ========================================================================== */
+#bottom-b {
+	background-color:@sectionbottom_b-background;
+}
+#bottom-b a {
+	color:@sectionbottom_b-link-color;
+}
+#bottom-b, #bottom-b h1, #bottom-b h2, #bottom-b h3, #bottom-b h4, #bottom-b h5, #bottom-b h6 {
+	color:@sectionbottom_b-color;
+}
+/* Section Bottom C 
+ ========================================================================== */
+#bottom-c {
+	background-color:@sectionbottom_c-background;
+}
+#bottom-c a {
+	color:@sectionbottom_c-link-color;
+}
+#bottom-c, #bottom-c h1, #bottom-c h2, #bottom-c h3, #bottom-c h4, #bottom-c h5, #bottom-c h6 {
+	color:@sectionbottom_c-color;
+}
+/* Section Bottom D 
+ ========================================================================== */
+#bottom-d {
+	background-color:@sectionbottom_d-background;
+}
+#bottom-d a,
+#bottom-d h1, #bottom-d h2, #bottom-d h3, #bottom-d h4, #bottom-d h5, #bottom-d h6 {
+	color:@sectionbottom_d-link-color;
+}
+#bottom-d  {
+	color:@sectionbottom_d-color;
+}
+
+/* Section Footer
+ ========================================================================== */
+.footer-outer {
+	background-color:@sectionfooter-background;
+}
+.footer-outer a,
+.footer-outer h1, .footer-outer h2, .footer-outer h3, .footer-outer h4, .footer-outer h5, .footer-outer h6 {
+	color:@sectionfooter-link-color;
+}
+.footer-outer {
+	color:@sectionfooter-color;
+}
+/* Main Menu 100%
+ ========================================================================== */
+.menu-outer {
+	background-color:@navbar-background;
+	width:100%;
+	z-index:99;
+	position:relative;
+	height:@navbar-nav-height
+}
+
+.uk-navbar {
+    max-width: inherit;
+	height:@navbar-nav-height
+}
+
+.text-color {
+    color: @global-link-color;
+}
+
+.uk-navbar-toggle {
+    color: @sectionlogobar-color;
+}
+/* Logo Left
+ ========================================================================== */
+.logo-left {
+	height:@navbar-nav-height;
+	display:inline;
+}
+.logo-left * {
+	line-height:@navbar-nav-height;
+	color:@navbar-brand-color;
+}
+
+/* Toolbar Right
+ ========================================================================== */
+.toolbar-r {
+	line-height:@navbar-nav-height;
+	display:inline;
+
+}
+/* Section Logobar
+ ========================================================================== */
+.logobar  {
+	background:@sectionlogobar-background;
+}
+.logo * {
+	color:@sectionlogobar-color;
+}
+.logobar, .logobar h1, .logobar h2, .logobar h3, .logobar h4, .logobar h5, .logobar h6 {
+	color:@sectionlogobar-color;
+}
+
+/* HR Styles 
+ ========================================================================== */
+
+hr.style-three {
+	border-bottom: solid 3px @global-primary-background;
+}
+
+hr.style-three:after {
+	border-bottom: solid 3px @global-primary-background;
+}
+
+/* Icons 
+ ========================================================================== */
+span.ico {
+	border:3px solid @global-primary-background;
+    color: @global-color;
+}
+
+/* Rok Mosaic 
+ ========================================================================== */
+.sprocket-tables-link .readon,
+.sprocket-mosaic .sprocket-mosaic-tags li, 
+.sprocket-mosaic ul.sprocket-mosaic-tags li {
+    background: @global-primary-background;
+    color: @global-contrast-color;
+	font-size:12px;
+}
+.button .sprocket-strips-c-block:nth-child(odd) .sprocket-strips-c-item {background: @global-primary-background}
+.button .sprocket-strips-c-block:nth-child(even) .sprocket-strips-c-item {background: @global-primary-background}
+
+/* Social Icons 
+ ========================================================================== */
+
+.uk-icon-button {
+    background: @global-primary-background;
+    color: @global-contrast-color;
+    -webkit-animation: @dropdown-animation 0.8s ease-in-out;
+    animation: @dropdown-animation 0.8s ease-in-out;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+/* Top Navbar Arrow for Submenu
+ ========================================================================== */
+.uk-navbar-nav > li.uk-parent > a:after {
+    content: "\f0d7";
+    display: block;
+    font-family: FontAwesome;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: @navbar-nav-height;
+    position: absolute;
+    right: 10px;
+	top:0;
+}
+.uk-navbar-nav > li.uk-parent > a {
+    padding-right: 25px;
+    position: relative;
+}
+.uk-nav-dropdown > li > a,
+.uk-nav-navbar ul a,
+.uk-nav-navbar .uk-nav-header,
+.uk-nav-navbar > li > a {
+    color: @dropdown-color;
+}
+.uk-nav-navbar ul a:hover{
+    color: @navbar-link-hover-color;
+	
+}
+/* Off Canvas Menu Icon
+ ========================================================================== */
+.uk-navbar-toggle:after {
+  content: "\f039";
+  font-family: FontAwesome;
+  /* 1 */
+  vertical-align: middle;
+}
+.uk-navbar-toggle-alt:after {
+  content: "\f039";
+}
+
+/* Override the global margin 
+ ========================================================================== */
+* + p, * + hr, * + ul, * + ol, * + dl, * + blockquote, * + pre, * + address, * + fieldset, * + figure, h1, h2, h3, h4, h5, h6 {
+    margin: 10px 0 4px 0;
+}
+.uk-text-large {
+    margin: 20px 0;
+}
+
+/* Dropdown Animation 
+ ========================================================================== */
+
+.uk-open > .uk-dropdown {
+    display: block;
+    -webkit-animation: @dropdown-animation 0.8s ease-in-out;
+    animation: @dropdown-animation 0.8s ease-in-out;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus,
+.uk-navbar-nav > li.uk-open > a {
+    -webkit-animation: @dropdown-animation 0.3s fade-in-out;
+    animation: @dropdown-animation 0.3s fade-in-out;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+
+/* Joomla Content
+ ========================================================================== */
+.tm-content {
+	padding: @global-margin;
+	background: #FFF;
+}
+
+
+/* Dropdown background
+ ========================================================================== */
+
+.uk-dropdown-navbar {
+    background: @dropdown-background;
+}
+/*
+ * Force vertical scrollbar
+ */
+
+html { overflow-y: scroll; }
+
+/*
+ * Blocks
+ */
+
+.tm-toolbar,
+.tm-headerbar,
+.tm-navbar,
+.tm-footer {
+    margin-top: @grid-gutter-large-vertical;
+    margin-bottom: @grid-gutter-large-vertical;
+}
+
+/* Only large screens */
+@media (min-width: @breakpoint-xlarge) {
+
+    .tm-headerbar,
+    .tm-navbar,
+    .tm-footer {
+        margin-top: @grid-gutter-large-vertical;
+        margin-bottom: @grid-gutter-large-vertical;
+    }
+
+}
+
+/* Only phones */
+@media (max-width: @breakpoint-small-max) {
+
+    .tm-navbar {
+        margin: 0 -@utility-container-padding-horizontal @global-grid-gutter -@utility-container-padding-horizontal;
+        border-width: 0 0 1px 0;
+    }
+
+    .tm-logo-small:hover { text-decoration: none; };
+
+    .tm-navbar:not(.uk-navbar-attached) { border-radius: 0; }
+
+}
+
+/*
+ * Logo small
+ * Remove whitespace caused by vertical centering to prevent logo wrapping into the next line
+ */
+
+.tm-logo-small { letter-spacing: -0.31em; }
+
+/*
+ * Toolbar
+ */
+
+.tm-toolbar .uk-float-left .uk-panel {
+    margin: 0 @global-grid-gutter 0 0;
+    float: left;
+}
+
+.tm-toolbar .uk-float-right .uk-panel {
+    margin: 0 0 0 @global-grid-gutter;
+    float: right;
+}
+
+/*
+ * Headerbar
+ */
+
+.tm-headerbar .tm-logo { float: left; }
+
+.tm-headerbar .uk-panel {
+    max-width: 100%;
+    margin-right: 0;
+    float: right;
+}
+
+/*
+ * Middle
+ */
+
+.tm-main > :nth-child(n+2) { margin-top: @global-grid-gutter; }
+
+.tm-content > :last-child { margin-bottom: 0; }
+
+/*
+ * Footer
+ */
+
+.tm-footer {
+    position: relative;
+    text-align: center;
+}
+
+.tm-footer .uk-panel + .uk-panel { margin-top: @global-grid-gutter; }
+
+/*
+ * To-top scroller
+ */
+
+.tm-totop-scroller {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: @global-z-index;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    color: @global-color;
+    text-align: center;
+    -webkit-transition: all linear 0.05s;
+    transition: all linear 0.05s;
+}
+
+.tm-totop-scroller:after {
+    content: "\f077";
+    font-family: "FontAwesome";
+}
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+
+.tm-totop-scroller:hover,
+.tm-totop-scroller:focus { /* 1 */
+    color: lighten(@global-color, 20%);
+    font-size: 16px;
+    outline: none; /* 2 */
+    text-decoration: none;
+}
+
+/* Active */
+.tm-totop-scroller:active {
+    color: darken(@global-color, 20%);
+    font-size: 11px;
+}
+
+
+/* Blog
+ ========================================================================== */
+
+/*
+ * Leading article
+ * Joomla only
+ */
+
+.tm-leading-article .uk-article:last-child {
+    padding-bottom: @article-margin-top;
+    border-bottom: 1px solid @base-hr-border;
+}
+
+
+/* Error
+ ========================================================================== */
+
+.tm-error-icon { font-size: 250px; }
+
+.tm-error-headline { font-size: 100px; }
+
+
+/* Offline
+ ========================================================================== */
+
+.tm-offline { width: 300px; }
+
+
+/* Socialbuttons
+ ========================================================================== */
+
+.tm-socialbuttons > div {
+    margin-right: 10px;
+    float: left;
+}
+/* Top Top Scroller
+ ========================================================================== */
+.tm-totop-scroller {
+    color: #444444;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+    line-height: 20px;
+    position: fixed;
+    right: 20px;
+    text-align: center;
+    bottom: 20px;
+    transition: all 0.05s linear 0s;
+    width: 20px;
+    z-index: 1000;
+	top:inherit;
+}
+
+/* WordPress only
+ ========================================================================== */
+
+.alignleft {
+    display: block;
+    margin-right: @utility-align-horizontal;  
+    float: left;  
+}
+
+.alignright {
+    display: block;
+    margin-left: @utility-align-horizontal;  
+    float: right;  
+}
+
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Large Screen */
+@media (min-width: 1025px) {
+    .uk-container {
+        padding: @grid-gutter-xlarge-vertical @grid-gutter-xlarge-horizontal;
+    }
+}
+/* Large Screen */
+@media (max-width: 1024px) {
+    .uk-container {
+        padding: @grid-gutter-large-vertical @grid-gutter-large-horizontal;
+    }
+}
+/* Small Screen */
+@media (max-width: 768px) {
+    .uk-container {
+        padding: @grid-gutter-small-vertical @grid-gutter-small-horizontal;
+    }
+	h1 {font-size:130% !important;line-height:1.3 !important}
+	h2,h3,h4,h5,h6 {font-size:16px !important;line-height:1.4 !important}
+
+}

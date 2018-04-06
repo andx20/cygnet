@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.7//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.7/template-install.dtd">
+<extension version="2.5" type="template" client="site" method="upgrade">
+	<name>jp-perfect</name>
+	<version>1.0.001</version>
+	<creationDate>September 2017</creationDate>
+	<author>JoomlaPlates</author>
+	<authorEmail>support@JoomlaPlates.com</authorEmail>
+	<authorUrl>http://www.JoomlaPlates</authorUrl>
+    <copyright>Copyright (C) JoomlaPlates</copyright>
+    <license>http://www.gnu.org/licenses/gpl.html GNU/GPL</license>
+	<description>Perfect Theme by JoomlaPlates</description>
+	<files>
+		<filename>checksums</filename>
+		<filename>apple_touch_icon.png</filename>
+		<filename>CHANGELOG.md</filename>
+		<filename>component.php</filename>
+		<filename>config.php</filename>
+		<filename>config.xml</filename>
+		<filename>config.default.json</filename>
+		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>offline.php</filename>
+		<filename>raw.php</filename>
+		<filename>warp.php</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>templateDetails.xml</filename>
+		<folder>css</folder>
+		<folder>html</folder>
+		<folder>js</folder>
+		<folder>layouts</folder>
+		<folder>less</folder>
+		<folder>warp</folder>
+		<folder>images</folder>
+		<folder>styles</folder>
+		<folder>roksprocket</folder>
+	</files>
+    <positions>
+        <position settings="">search</position>
+        <position settings="">logo-small</position>
+        <position settings="">logo-center</position>
+        <position settings="">logo-left</position>
+        <position settings="">menu</position>
+        <position settings="">toolbar-l</position>
+        <position settings="">toolbar-r</position>
+        <position>headerbar</position>
+        <position settings="">breadcrumbs</position>
+        <position settings="">absolute</position>
+        <position>top-a</position>
+        <position>top-b</position>
+        <position>top-c</position>
+		<position>top-d</position>
+        <position>bottom-a</position>
+        <position>bottom-b</position>
+        <position>bottom-c</position>
+        <position>bottom-d</position>
+        <position>main-top</position>
+        <position>main-bottom</position>
+        <position>sidebar-a</position>
+        <position>sidebar-b</position>
+        <position settings="">footer-l</position>
+        <position settings="">footer-r</position>
+        <position settings="">offcanvas</position>
+        <position settings="">debug</position>
+    </positions>
+	<config>
+		<fields name="params" addfieldpath="/templates/jp-perfect/warp/systems/joomla/config/elements">
+			<fieldset name="options">
+		    	<field name="config" type="config" label="Config" description="" default="" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
